@@ -4,6 +4,17 @@
         <!-- jumbotron -->
         <div class="jumbotron">
             <div class="container">
+                <div class="jumbo-box">
+
+                    <div class="text-special">
+                        Friendly Atmosphere
+                    </div>
+                    <h1>Welcoming Place</h1>
+                    <p>For Every Child</p>
+
+                    <div class="button">buy this theme now</div>
+
+                </div>
 
 
             </div>
@@ -89,6 +100,46 @@ export default {
         
 
         .jumbotron {
+            
+            background-image: url('../assets/slider_slide2_background.png');
+            background-size: contain;
+            
+            .container {
+                height: 400px;
+                display: flex;
+                align-items: center;
+
+                .jumbo-box {
+                    color: $purple;
+
+                    .text-special {
+                        color: $orange;
+                        font-family: 'Satisfy', cursive;
+                        padding: 7px 0;
+                        font-size: 22px;
+                    }
+                    h1 {
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                    p {
+                        font-size: 28px;
+                        padding: 6px 0 ;
+                    }
+                    .button {
+                        margin-top: 14px;
+                        background: $orange;
+                        color: $sugar;
+                        width: 130px;
+                        
+                          
+                        &:hover {
+                        background-color: $purple;
+                        }
+                    }
+
+                }
+            }
             
            
             
