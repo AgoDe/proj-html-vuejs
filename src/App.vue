@@ -3,6 +3,7 @@
 
       <!-- header container -->
       <header-container
+      :navItem="navItem"
       />
       <!-- end of header container -->
 
@@ -39,50 +40,50 @@ export default {
       navItem: [
         {
           item: 'Home',
-          path: 'home-2.png',
+          path: 'home.png',
           active: true,
-          pathActive:'home.png',
+          pathActive:'home-2.png',
         },
         {
           item: 'Pages',
-          path: 'document-2.png',
+          path: 'document.png',
           active: false,
-          pathActive:'document.png',
+          pathActive:'document-2.png',
 
         },
         {
           item: 'blog',
-          path: 'printer-2',
-          active: true,
-          pathActive:'printer.png',
+          path: 'printer.png',
+          active: false,
+          pathActive:'printer-2.png',
 
         },
         {
           item: 'Shop',
-          path: 'cart-2.png',
-          active: true,
-          pathActive:'cart.png',
+          path: 'cart.png',
+          active: false,
+          pathActive:'cart-2.png',
 
         },
         {
           item: 'Shortcodes',
-          path: 'lab-2.png',
-          active: true,
-          pathActive:'lab.png',
+          path: 'lab.png',
+          active: false,
+          pathActive:'lab-2.png',
 
         },
         {
           item: 'Support',
-          path: 'chat-2.png',
-          active: true,
-          pathActive:'chat.png',
+          path: 'chat.png',
+          active: false,
+          pathActive:'chat-2.png',
 
         },
         {
           item: 'Contact',
-          path: 'envelope-2.png',
-          active: true,
-          pathActive:'envelope.png',
+          path: 'envelope.png',
+          active: false,
+          pathActive:'envelope-2.png',
 
         },
       ]
