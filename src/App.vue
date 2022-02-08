@@ -41,13 +41,13 @@ export default {
         {
           item: 'Home',
           path: 'home.png',
-          active: true,
+          active: false,
           pathActive:'home-2.png',
         },
         {
           item: 'Pages',
           path: 'document.png',
-          active: false,
+          active: true,
           pathActive:'document-2.png',
 
         },

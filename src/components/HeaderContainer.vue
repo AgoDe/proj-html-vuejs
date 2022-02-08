@@ -10,8 +10,8 @@
                 v-for="(item, index) in navItem"
                 :key="index"
                 >
-                    <img v-if="item.active" src="../assets/home-2.png" :alt="item.item">
-                    <img v-if="!(item.active)" :src="`../assets/${item.path}`" :alt="item.item">
+                    <img v-if="item.active" :src="`/images/${item.pathActive}`" :alt="item.item">
+                    <img v-if="!(item.active)" :src="`/images/${item.path}`" :alt="item.item">
                     <div> {{item.item}} </div>
                 </li>
             </ul>
@@ -53,6 +53,7 @@ export default {
                 height: 100%;
                 width: 75px;
                 color: $purple;
+                cursor: pointer;
                 
                 display: flex;
                 flex-direction: column;

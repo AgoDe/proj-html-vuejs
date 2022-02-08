@@ -18,21 +18,26 @@
 .button {
     width: 110px;
     height: 30px;
-    text-align: center;
-    line-height: 30px;
     font-size: 10px;
     font-weight: 400;
+    padding-left:7px;
     text-transform: uppercase;
     cursor: pointer;
-    
 
-    &:hover {
-        background-color: $sugar;
-        color: $purple;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-    // &::after {
-    //     background: url("../assets/images/slider_next.png");
-    // }
+}
 
+h2 {
+    color: $purple; 
+}
+.subtitle {
+    font-size: 11px;
+    color: $grey;
+}
+.divider {
+    height: 9px;
+    margin: 20px;
 }
