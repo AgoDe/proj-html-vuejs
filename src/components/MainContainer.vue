@@ -27,7 +27,6 @@
                 <p>How to Enroll Your Child to a Class?</p>
                 <div class="button">
                     learn more 
-                    <img src="../assets/slider_next.png" alt="next">
                 </div>
             </div>
         </div>
@@ -107,7 +106,6 @@ export default {
             .container {
                 height: 400px;
                 display: flex;
-                align-items: center;
 
                 .jumbo-box {
                     color: $purple;
@@ -217,7 +215,7 @@ export default {
                     }
                 }
             }
-        }
+        } // end of welcome
     } 
        
 
