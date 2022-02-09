@@ -1,7 +1,7 @@
 <template>
     <footer>
-        <!-- <img src="../assets/maps.png" alt="mappa"> -->
-        <div class="contacts container">
+        <div class="maps"></div>
+        <div class="container">
 
             <h2>Contact Us</h2>
             <div class="subtitle">Our postal address and contact details</div>
@@ -85,9 +85,14 @@ export default {
 @import '@/styles/main.scss';
 
 footer {
-    
 
-    .contacts {
+    .maps {
+        background: url(../assets/maps.png);
+        height: 380px;
+        background-size: cover;
+    }
+
+    .container {
         padding: $container-pad 0;
 
         .contacts-box {
