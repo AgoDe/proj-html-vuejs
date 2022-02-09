@@ -38,6 +38,7 @@ export default {
             height: 80px;
             display: flex;
             justify-content: space-between;
+            padding: 0;
 
             .logo {
                 height: 100%;

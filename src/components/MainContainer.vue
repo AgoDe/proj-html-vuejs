@@ -43,7 +43,7 @@
             <div class="services">
 
                 <div class="service-box">
-                    <div class="round-box">
+                    <div class="roundbox">
                         <img src="../assets/schoolbag_alt.png" alt="schoolbag">
                     </div>
 
@@ -51,7 +51,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
                 <div class="service-box">
-                    <div class="round-box purple">
+                    <div class="roundbox purple">
                         <img src="../assets/stroller_alt.png" alt="schoolbag">
                     </div>
 
@@ -59,7 +59,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
                 <div class="service-box">
-                    <div class="round-box">
+                    <div class="roundbox">
                         <img src="../assets/globe_alt.png" alt="schoolbag">
                     </div>
 
@@ -67,7 +67,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
                 <div class="service-box">
-                    <div class="round-box purple">
+                    <div class="roundbox purple">
                         <img src="../assets/bell_alt.png" alt="schoolbag">
                     </div>
 
@@ -243,7 +243,7 @@ export default {
                     justify-content: space-between;
                     align-items: center;
 
-                    .round-box {
+                    .roundbox {
                         height: 150px;
                         width: 150px;
                         border-radius: 50%;
@@ -257,7 +257,7 @@ export default {
                             vertical-align: middle;
                         }
                     }
-                    .round-box.purple {
+                    .roundbox.purple {
                         background: $purple;
                     }
                      h4 {
@@ -265,6 +265,7 @@ export default {
                     }
                     p {
                         font-size: 10px;
+                        text-align: justify;
                     }
                 }
             }
