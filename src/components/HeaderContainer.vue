@@ -9,10 +9,11 @@
                 :class="{active : item.active}"
                 v-for="(item, index) in navItem"
                 :key="index"
+                @click="$emit('activateMenuItem', item)"
                 >
                     <img v-if="item.active" :src="`/images/${item.pathActive}`" :alt="item.item">
                     <img v-if="!(item.active)" :src="`/images/${item.path}`" :alt="item.item">
-                    <div> {{item.item}} </div>
+                    <div>{{item.item}}</div>
                 </li>
             </ul>
 

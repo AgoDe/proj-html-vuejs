@@ -181,7 +181,7 @@ export default {
                         margin-top: 14px;
                         background: $orange;
                         color: $sugar;
-                        width: 130px;
+                        width: 150px;
                         
                           
                         &:hover {

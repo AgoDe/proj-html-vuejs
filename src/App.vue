@@ -4,6 +4,7 @@
       <!-- header container -->
       <header-container
       :navItem="navItem"
+      @activateMenuItem="activateMenuItem"
       />
       <!-- end of header container -->
 
@@ -87,6 +88,14 @@ export default {
 
         },
       ]
+    }
+  },
+  methods: {
+    activateMenuItem: function(item) {
+      this.navItem.forEach(el => {
+        el.active = false
+      })
+      item.active = true
     }
   }
 }
