@@ -81,6 +81,7 @@
         <!-- end of welcome to fable -->
 
         <!-- overview -->
+        <overview-container/>
         <!-- end of overview -->
 
         <!-- classes-container -->
@@ -105,8 +106,12 @@
 
 <script>
 import ClassesContainer from './ClassesContainer.vue'
+import OverviewContainer from './OverviewContainer.vue'
+
 export default {
-  components: { ClassesContainer },
+  components: { 
+    ClassesContainer,
+    OverviewContainer },
     
 }
 </script>
@@ -190,7 +195,7 @@ export default {
         } // end of banner
 
         .welcome {
-            padding-top: 30px;
+            padding: $container-pad 0;
             text-align: center;
 
             .services {
