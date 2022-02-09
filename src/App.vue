@@ -32,7 +32,7 @@ export default {
   components: {
     HeaderContainer,
     MainContainer,
-    FooterContainer
+    FooterContainer,
   },
   data() {
     return {

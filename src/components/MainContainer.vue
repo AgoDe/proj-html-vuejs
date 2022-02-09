@@ -80,6 +80,22 @@
         </div>
         <!-- end of welcome to fable -->
 
+        <!-- overview -->
+        <!-- end of overview -->
+
+        <!-- classes-container -->
+        <classes-container/>
+        <!-- end of classes-container -->
+
+        <!-- goals-container -->
+        <!-- end of goals-container -->
+
+        <!-- media-gallery -->
+        <!-- end of media-gallery -->
+
+        <!-- news-container -->
+        <!-- end of news-container -->
+
 
 
 
@@ -88,7 +104,9 @@
 </template>
 
 <script>
+import ClassesContainer from './ClassesContainer.vue'
 export default {
+  components: { ClassesContainer },
     
 }
 </script>
@@ -106,6 +124,7 @@ export default {
             .container {
                 height: 400px;
                 display: flex;
+                align-items: center;
 
                 .jumbo-box {
                     color: $purple;

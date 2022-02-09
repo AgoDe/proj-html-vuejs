@@ -84,53 +84,56 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/main.scss';
 
-.contacts {
-    padding: 30px 0;
+footer {
+    
 
-    .contacts-box {
-        display: flex;
-        justify-content: space-between;
+    .contacts {
+        padding: $container-pad 0;
 
-        .info-box {
-            img {
-                height: 25px;
-                margin: 10px 0;
-            }
-            h3 {
-                color: $purple;
-                margin: 10px 0;
-            }
-            .info {
-                color: $grey;
-                font-size: 11px;
-                margin: 3px;
-            }
-        }
-    } // end of contacts-box
-
-    .input-container {
-        display: flex;
-
-        div {
-            width: 50%;
-            padding: 15px;
+        .contacts-box {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
 
-        } 
-    } // end of input-container
+            .info-box {
+                img {
+                    height: 25px;
+                    margin: 10px 0;
+                }
+                h3 {
+                    color: $purple;
+                    margin: 10px 0;
+                }
+                .info {
+                    color: $grey;
+                    font-size: 11px;
+                    margin: 3px;
+                }
+            }
+        } // end of contacts-box
 
-    .button {
-        margin-top: 14px;
-        background: $orange;
-        color: $sugar;
-        
+        .input-container {
+            display: flex;
+
+            div {
+                width: 50%;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+            } 
+        } // end of input-container
+
+        .button {
+            margin-top: 14px;
+            background: $orange;
+            color: $sugar;
             
-        &:hover {
-        background-color: $purple;
+                
+            &:hover {
+                background-color: $purple;
+            }
         }
-    }
 
-}
+    } // end of contacts
+} // end of footer
 
 </style>
