@@ -8,10 +8,10 @@
         <img class="divider" src="../assets/header_divider.png" alt="">
 
         <div class="presentation">
-            <div>
+            <div class="special-text">
                 We provided four classes with nine to twenty children each aged twelve month to five years of age
             </div>
-            <div>
+            <div class="description-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat error et quia corporis inventore illum nihil reiciendis. Optio architecto dolor recusandae accusantium ea quibusdam? Libero totam explicabo ullam eligendi.
             </div>
         </div>
@@ -105,15 +105,10 @@ export default {
     .presentation {
         display: flex;
 
-        div:first-child {
-            color: $purple;
-            font-size: 16px;
-            
-        }
+       
         div {
             padding: 10px;
             width: 50%;
-            font-size: 10px;
             text-align: justify;
 
         }
@@ -121,14 +116,15 @@ export default {
 
     .classes {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         
 
         .class-box {
             margin: 1px solid black;
-            width: 50%;
+            width: calc(50% - 15px);
             height: 200px;
-            padding: 15px;
+            padding: 15px 0 ;
             display: flex;
 
             &>div {
@@ -166,10 +162,6 @@ export default {
                         font-size: 13px;
                         font-weight: 500;
 
-
-                        .item-data {
-
-                        }
                         .item-title {
                             color: $light-grey;
                         }
@@ -206,7 +198,7 @@ export default {
             }
 
         }
-    }
+    } // end of classes
 } // end of container
 
 

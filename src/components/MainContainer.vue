@@ -89,6 +89,7 @@
         <!-- end of classes-container -->
 
         <!-- goals-container -->
+        <goals-container/>
         <!-- end of goals-container -->
 
         <!-- media-gallery -->
@@ -106,12 +107,14 @@
 
 <script>
 import ClassesContainer from './ClassesContainer.vue'
+import GoalsContainer from './GoalsContainer.vue'
 import OverviewContainer from './OverviewContainer.vue'
 
 export default {
   components: { 
     ClassesContainer,
-    OverviewContainer },
+    OverviewContainer,
+    GoalsContainer },
     
 }
 </script>
@@ -210,9 +213,6 @@ export default {
                     flex-direction: column;
                     justify-content: space-between;
                     align-items: center;
-
-                   
-
 
                     .round-box {
                         height: 150px;

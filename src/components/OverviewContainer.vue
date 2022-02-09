@@ -9,7 +9,7 @@
                     <div class="button">Our Mission</div>
                 </div>
 
-                <h3>Our philosophy is learning through play as we offer a stimulating environment for children</h3>
+                <div class="special-text">Our philosophy is learning through play as we offer a stimulating environment for children</div>
 
                 <div>
                     <div class="info-box">
@@ -115,14 +115,13 @@ export default {
                     }
                 }
 
-                h3 {
-                    color: $purple;
-                    font-weight: 500;
-                    margin: 10px;
+                .special-text {
+                    margin: 15px 0;
                 }
                 .info-box {      
                     display: flex;
                     align-items: center;
+
                     .round-box {
                         width: 50px;
                         height: 50px;
