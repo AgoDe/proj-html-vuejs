@@ -117,6 +117,7 @@
         <!-- end of reviews -->
 
         <!-- news-container -->
+        <news-container/>
         <!-- end of news-container -->
 
 
@@ -129,6 +130,7 @@
 <script>
 import ClassesContainer from './ClassesContainer.vue'
 import GoalsContainer from './GoalsContainer.vue'
+import NewsContainer from './NewsContainer.vue'
 import OverviewContainer from './OverviewContainer.vue'
 import ReviewsContainer from './ReviewsContainer.vue'
 
@@ -137,7 +139,8 @@ export default {
     ClassesContainer,
     OverviewContainer,
     GoalsContainer,
-    ReviewsContainer },
+    ReviewsContainer,
+    NewsContainer },
     
 }
 </script>
