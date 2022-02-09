@@ -93,6 +93,12 @@
         <!-- end of goals-container -->
 
         <!-- media-gallery -->
+        <div class="gallery">
+            <img src="../assets/gallery_01.jpg" alt="gallery-1">
+            <img src="../assets/gallery_02.jpg" alt="gallery-2">
+            <img src="../assets/gallery_03.jpg" alt="gallery-3">
+            <img src="../assets/gallery_04.jpg" alt="gallery-4">
+        </div>
         <!-- end of media-gallery -->
 
         <!-- special banner -->
@@ -257,6 +263,13 @@ export default {
                 }
             }
         } // end of welcome
+        .gallery {
+            display: flex;
+
+            img {
+                width: calc(100% / 4);
+            }
+        }
     } 
        
 

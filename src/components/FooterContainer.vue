@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <img src="../assets/maps.png" alt="mappa">
+        <!-- <img src="../assets/maps.png" alt="mappa"> -->
         <div class="contacts container">
 
             <h2>Contact Us</h2>
