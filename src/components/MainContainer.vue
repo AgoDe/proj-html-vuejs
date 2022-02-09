@@ -95,6 +95,20 @@
         <!-- media-gallery -->
         <!-- end of media-gallery -->
 
+        <!-- special banner -->
+        <div class="banner special">
+            <div class="container">
+                <p>See Our Kindergarten Photo Gallery!</p>
+                <div class="button">
+                    view gallery
+                </div>
+            </div>
+        </div>
+        <!-- end of special banner -->
+
+        <!-- reviews -->
+        <!-- end of reviews -->
+
         <!-- news-container -->
         <!-- end of news-container -->
 
@@ -196,7 +210,10 @@ export default {
                 }
             }// end of container
         } // end of banner
-
+        .banner.special {
+            background: url(../assets/pattern.png) repeat;
+            background-size: cover;
+        }
         .welcome {
             padding: $container-pad 0;
             text-align: center;
