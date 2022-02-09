@@ -85,7 +85,7 @@ export default {
 @import '@/styles/main.scss';
 
 .contacts {
-    padding-top: 30px;
+    padding: 30px 0;
 
     .contacts-box {
         display: flex;

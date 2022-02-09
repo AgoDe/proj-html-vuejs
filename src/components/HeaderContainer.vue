@@ -2,7 +2,7 @@
     <header>
         <div class="container"> 
 
-            <img  class="logo" src="../assets/images/logo.png" alt="logo">
+            <img  class="logo" src="../assets/logo.png" alt="logo">
 
             <ul>
                 <li
