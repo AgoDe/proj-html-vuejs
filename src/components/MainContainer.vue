@@ -113,6 +113,7 @@
         <!-- end of special banner -->
 
         <!-- reviews -->
+        <reviews-container/>
         <!-- end of reviews -->
 
         <!-- news-container -->
@@ -129,12 +130,14 @@
 import ClassesContainer from './ClassesContainer.vue'
 import GoalsContainer from './GoalsContainer.vue'
 import OverviewContainer from './OverviewContainer.vue'
+import ReviewsContainer from './ReviewsContainer.vue'
 
 export default {
   components: { 
     ClassesContainer,
     OverviewContainer,
-    GoalsContainer },
+    GoalsContainer,
+    ReviewsContainer },
     
 }
 </script>
@@ -200,7 +203,7 @@ export default {
                 align-items: center;
 
                 p {
-                    font-size: 19px;
+                    font-size: 20px;
                 }
                 .button {
                     border: white 1px solid;
