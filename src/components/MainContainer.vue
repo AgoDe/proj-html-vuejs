@@ -16,7 +16,6 @@
 
                 </div>
 
-
             </div>
         </div>
         <!-- end of jumbotron -->
@@ -158,31 +157,44 @@ export default {
     main {
         
 
-        .jumbotron {
-            
-            background-image: url('../assets/slider_slide2_background.png');
-            background-size: contain;
+        .jumbotron {         
+            background: 
+                url('../assets/slider_slide2_img1.png') no-repeat 60%, 
+                url('../assets/slider_slide2_img2.png') no-repeat 80%, 
+                url('../assets/slider_icon10.png') no-repeat 30% 5%,
+                url('../assets/slider_icon14.png') no-repeat 36% 20%,
+                url('../assets/slider_icon11.png') no-repeat 40% 5%,
+                url('../assets/slider_icon12.png') no-repeat 44% 25%,
+                url('../assets/slider_icon13.png') no-repeat 50% 10%,
+                url('../assets/slider_slide2_background.png') repeat
+                ;
+
+             
+    
+            background-size: contain, contain, 4% 16%, 3% 10%, 4% 13%, 5% 15%, 5% 15%, contain;
+
             
             .container {
-                height: 400px;
+                height: 400px; 
                 display: flex;
                 align-items: center;
 
                 .jumbo-box {
+                    text-align: left;
                     color: $purple;
 
                     .text-special {
                         color: $orange;
                         font-family: 'Satisfy', cursive;
                         padding: 7px 0;
-                        font-size: 22px;
+                        font-size: 25px;
                     }
                     h1 {
-                        font-size: 28px;
+                        font-size: 34px;
                         font-weight: bold;
                     }
                     p {
-                        font-size: 28px;
+                        font-size: 34px;
                         padding: 6px 0 ;
                     }
                 }
