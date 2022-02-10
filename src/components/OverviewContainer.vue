@@ -123,18 +123,7 @@ export default {
                     align-items: center;
 
                     .round-box {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
                         background-color: $orange;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
                     }
                     .info {
                         width: 80%;

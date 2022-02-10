@@ -132,20 +132,8 @@ export default {
                     align-items: center;
                     text-align: center;
 
-                    .round-box {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
+                    .round-box {            
                         background: $sugar;
-
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            height: 20px;
-                            width: 20px;
-                        }
                     }
                     .special-text {
                         margin: 10px;
