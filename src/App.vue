@@ -18,7 +18,6 @@
       />
       <!-- end of footer container  -->
 
-
   </div>
 </template>
 
@@ -26,7 +25,6 @@
 import FooterContainer from './components/FooterContainer.vue'
 import HeaderContainer from './components/HeaderContainer.vue'
 import MainContainer from './components/MainContainer.vue'
-
 
 export default {
   name: 'App',
@@ -42,13 +40,13 @@ export default {
         {
           item: 'Home',
           path: 'home.png',
-          active: false,
+          active: true,
           pathActive:'home-2.png',
         },
         {
           item: 'Pages',
           path: 'document.png',
-          active: true,
+          active: false,
           pathActive:'document-2.png',
 
         },

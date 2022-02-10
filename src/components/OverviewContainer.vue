@@ -1,6 +1,6 @@
 <template>
     <div class="overview">
-        <div class="container">
+        <div class="container padding-y30">
 
             <!-- info (first child) -->
             <div>
@@ -13,8 +13,7 @@
                     @click="activeNavItem(item)"
                     >
                     {{item.item}}
-                    </div>
-                    
+                    </div>    
                 </div>
 
                 <div class="overview" v-if="navItems[0].status">
@@ -153,22 +152,19 @@ export default {
         background: $light-grey;
         
         .container {
-            padding: 30px 0;
             display: flex;
+            justify-content: space-between;
             align-items: center;
 
             &>div {
-                width: 50%;
-                padding: 10px;
-                text-align: left;
-                
+                width: 48%;
+                text-align: left; 
             }
             &>div:first-child {
                 position: relative;
                 height: 300px;
 
                 .button-box {
-
                     position: absolute;
                     top: -40px;
 
@@ -286,10 +282,7 @@ export default {
                         border-color: $orange;
                     }
                 }
-
             } // end of last-child
-
-
-        }
-    }
+        } // end of container
+    } // end of overview
 </style>

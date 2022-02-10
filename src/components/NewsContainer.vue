@@ -4,11 +4,10 @@
         <h2>What's New</h2>
         <div class="subtitle">
             Keep up to date with the latest news
-
         </div>
         <img class="divider" src="../assets/header_divider.png" alt="">
 
-         <div class="news-container">
+        <div class="news-container padding-y30">
 
             <div 
             class="news-box"
@@ -37,7 +36,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> <!-- end of news-container -->
 
         <div class="button special orange">go to blog</div>
 
@@ -104,8 +103,6 @@ export default {
         display: flex;
         justify-content: space-between;
 
-        padding: $container-pad 0;
-
         .news-box {
             width: calc(100% / 3 - 10px);
             text-align: left;
@@ -127,6 +124,7 @@ export default {
                 color: $grey;
                 font-weight: 500;
                 font-size: 9px;
+
                 img {
                     vertical-align: middle;
                     height: 10px;

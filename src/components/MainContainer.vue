@@ -15,11 +15,9 @@
                     <div class="button orange">buy this theme now</div>
 
                 </div>
-
             </div>
         </div>
         <!-- end of jumbotron -->
-
 
         <div class="banner">
             <div class="container">
@@ -41,35 +39,35 @@
 
             <div class="services">
 
+                <!-- box 1 -->
                 <div class="service-box">
                     <div class="roundbox">
                         <img src="../assets/schoolbag_alt.png" alt="schoolbag">
                     </div>
-
                     <h4>Morbi Etos</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
+                <!-- box 2 -->
                 <div class="service-box">
                     <div class="roundbox purple">
                         <img src="../assets/stroller_alt.png" alt="schoolbag">
                     </div>
-
                     <h4>Congue Gravida</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
+                <!-- box 3 -->
                 <div class="service-box">
                     <div class="roundbox">
                         <img src="../assets/globe_alt.png" alt="schoolbag">
                     </div>
-
                     <h4>Maecenas Node</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
+                <!-- box 4 -->
                 <div class="service-box">
                     <div class="roundbox purple">
                         <img src="../assets/bell_alt.png" alt="schoolbag">
                     </div>
-
                     <h4>Praesent Morbi</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est enim itaque quibusdam excepturi maxime provident voluptatum ipsa eius ratione. Excepturi nam, minus sequi ea possimus quia facilis et eum ratione?</p>
                 </div>
@@ -127,10 +125,6 @@
         <news-container/>
         <!-- end of news-container -->
 
-
-
-
-      
     </main>
 </template>
 
@@ -193,10 +187,7 @@ export default {
                         padding: 6px 0 ;
                     }
                 }
-            }
-            
-           
-            
+            } // end of container
         } // end of jumbotron
         .banner {
             background: $purple;
@@ -258,8 +249,8 @@ export default {
                         font-size: 10px;
                         text-align: justify;
                     }
-                }
-            }
+                } // end of service-box
+            } // end of services
         } // end of welcome
         .gallery {
             display: flex;

@@ -39,14 +39,11 @@ export default {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            
-            
 
             .round-box {
-            border: 1px $sugar solid;
-            margin: 20px;
+                border: 1px $sugar solid;
+                margin: 20px;
             }
-
             h3 {
                 font-size: 22px;
                 margin: 20px;
@@ -54,13 +51,6 @@ export default {
             p {
                 font-size: 12px;
             }
-            
-
-        }
-
-
-       
-
-
+        } // end of container
     }
 </style>

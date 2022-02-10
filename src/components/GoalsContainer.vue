@@ -1,6 +1,6 @@
 <template>
     <div class="goals-container">
-        <div class="container">
+        <div class="container padding-y30">
 
             <!-- first child -->
             <div>
@@ -20,50 +20,45 @@
                     <li>Positive learnign environment for your child</li>
                 </ul>
                     
-            </div>
-            <!-- end of first child -->
-
-            <!-- last child -->
-            <div>
+            </div>  <!-- end of first child -->
+           
+           <!-- last child -->
+            <div>  
+                <!-- goal-box 1 -->
                 <div class="goal-box">
                     <div class="round-box">
                         <img src="../assets/toy.png" alt="train">
                     </div>
-
                     <div class="special-text">Learning & Fun</div>
                     <div class="description-text">Peaesent modea est gravida node vehicula luctus</div>
                 </div>
-
+                <!-- goal-box 2 -->
                 <div class="goal-box">
                     <div class="round-box">
                         <img src="../assets/meal.png" alt="meal">
                     </div>
-
                     <div class="special-text">Healty Meals</div>
                     <div class="description-text">Terminal interdum a eleifend maecenas est morbi</div>
                 </div>
-
+                <!-- goal-box 3 -->
                 <div class="goal-box">
                     <div class="round-box">
                         <img src="../assets/school.png" alt="school">
                     </div>
-
                     <div class="special-text">Friendly Place</div>
                     <div class="description-text">Peaesent modea est gravida node vehicula luctus</div>
                 </div>
-
+                <!-- goal-box 4 -->
                 <div class="goal-box">
                     <div class="round-box">
                         <img src="../assets/shield.png" alt="shield">
                     </div>
-
                     <div class="special-text">Children Safety</div>
                     <div class="description-text">Terminal interdum a eleifend maecenas est morbi</div>
                 </div>
-            </div>
-            <!-- end of last child -->
+            </div> <!-- end of last-child -->
 
-        </div>
+        </div> <!-- end of container -->
     </div>
 </template>
 
@@ -77,17 +72,16 @@ export default {
 @import '@/styles/main.scss';
     .goals-container {
         background: $light-grey;
-        padding: $container-pad 0;
 
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             &>div {
                 width: calc(50% - 15px);
                 padding: 15px 0;
                 text-align: left;
-
             }
             &>div:first-child {
                 .special-text {
@@ -140,7 +134,7 @@ export default {
                     }
                 }
             } // end of last-child
-        }
+        } // end of container
 
     }
 

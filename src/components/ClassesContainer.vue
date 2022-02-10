@@ -23,10 +23,10 @@
             v-for="(item, index) in classes"
             :key="index"
             >
+                <!-- left side -->
                 <div>
                     <h3>{{item.title}}</h3>
                     <h4>{{item.class_name}}</h4>
-
                     <div class="info">
                         <div>
                             <div class="item-data">{{item.old}}</div>
@@ -38,17 +38,15 @@
                             <div class="item-title">Class size</div>
                         </div>
                     </div>
-
                 </div>
+                
+                <!-- right side -->
                 <div>
                     <img :src="`/images/${item.path}`" :alt="item.path">
                     <div class="button special orange">read more</div>
                 </div>
-            </div>
-
-        </div>
-
-
+            </div> <!-- end of class-box -->
+        </div> <!-- end of classes -->
 
     </div>
 </template>
@@ -104,12 +102,10 @@ export default {
     .presentation {
         display: flex;
 
-       
         div {
             padding: 10px;
             width: 50%;
             text-align: justify;
-
         }
     } // end of presentation
 
@@ -167,9 +163,7 @@ export default {
                         
                     }
                 }
-           
-
-            }
+            } // end of first-child
             &>div:last-child {
                 position: relative;
                 
@@ -188,6 +182,5 @@ export default {
         }
     } // end of classes
 } // end of container
-
 
 </style>

@@ -1,7 +1,8 @@
 <template>
-    <footer>
+    <footer class="padding-y30">
         <div class="maps"></div>
-        <div class="container">
+
+        <div class="container padding-y30">
 
             <h2>Contact Us</h2>
             <div class="subtitle">Our postal address and contact details</div>
@@ -35,9 +36,7 @@
             </div>
             <div class="button orange">send message</div>
 
-
-
-        </div>
+        </div> <!-- end of container -->
     </footer>
 </template>
 
@@ -93,7 +92,6 @@ footer {
     }
 
     .container {
-        padding: $container-pad 0;
 
         .contacts-box {
             display: flex;
@@ -147,8 +145,7 @@ footer {
             }
         } // end of input-container
 
-
-    } // end of contacts
+    } // end of container
 } // end of footer
 
 </style>
