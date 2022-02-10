@@ -145,10 +145,13 @@ export default {
             } // end of first-child
             &>div:last-child {
                 .img-slider {
+                    height: 275px;
                     width: 100%;
                     position: relative;
+
                     img {
                         width: 100%;
+                        object-fit: contain;
                     }
                     .slider-button {
                         height: 40px;
@@ -176,7 +179,8 @@ export default {
                     justify-content: space-between;
 
                     .img-box {
-                        width: calc(95% / 3);
+                        padding-top: 10px;
+                        width: calc(100% / 3 - 5px);
                         img {
                             width: 100%;
                             height: 100%;
