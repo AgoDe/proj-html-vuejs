@@ -33,7 +33,7 @@
                     <textarea placeholder="Your Message *" name=message rows="8" cols="80"></textarea>
                 </div>
             </div>
-            <submit class="button orange">send message</submit>
+            <div class="button orange">send message</div>
 
 
 

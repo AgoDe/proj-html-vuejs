@@ -37,24 +37,24 @@
             <!-- img slider (last child) -->
             <div>
                 <div class="img-slider">
-                    <img src="/images/overview_3.jpg" alt="">
-                    <div class="slider-button prev"> 
+                    <img :src="`/images/${activeImage}`" alt="">
+                    <div @click="sliderPrev" class="slider-button prev"> 
                         <img src="../assets/slider_previous.png" alt="prev-chevron">
                     </div>
-                    <div class="slider-button next"> 
+                    <div @click="sliderNext" class="slider-button next"> 
                         <img src="../assets/slider_next.png" alt="prev-chevron">
                     </div>
                 </div>
 
                 <div class="img-container">
-                    <div class="img-box">
-                        <img src="/images/overview_1.jpg" alt="">
-                    </div>
-                    <div class="img-box">
-                        <img src="/images/overview_2.jpg" alt="">
-                    </div>
-                    <div class="img-box">
-                        <img src="/images/overview_3.jpg" alt="">
+                    <div 
+                    class="img-box" 
+                    :class="{active : img.status}"
+                    v-for="(img, index) in sliderImages" 
+                    :key="index"
+                    @click="clickForOn(img)"
+                    >
+                        <img :src="`/images/${img.path}`" alt="">
                     </div>
                 </div>
             </div>
@@ -67,7 +67,52 @@
 
 <script>
 export default {
-    
+    data() {
+        return {
+            imageIndex: 0,
+            sliderImages: [
+                {   
+                    index: 0,
+                    path:'overview_1.jpg',
+                    status: true,
+                },
+                {   
+                    index: 1,
+                    path:'overview_2.jpg',
+                    status: false,
+                },
+                {   
+                    index: 2,
+                    path:'overview_3.jpg',
+                    status: false,
+                },
+            ],
+        }
+    },
+    computed: {
+        activeImage: function() {
+            this.imageOn()
+            return this.sliderImages[this.imageIndex].path
+        }
+    },
+    methods: {
+        sliderNext: function() {
+            this.imageIndex < this.sliderImages.length -1 ? this.imageIndex++ : this.imageIndex = 0
+        },
+        sliderPrev: function() {
+            this.imageIndex <= 0 ? this.imageIndex = this.sliderImages.length -1 : this.imageIndex--
+        },
+        imageOn: function() {
+             this.sliderImages.forEach(el => {
+                el.status = false
+            });
+            this.sliderImages[this.imageIndex].status = true;
+        },
+        clickForOn: function(img) {
+            this.imageIndex = img.index
+        }
+        
+    }
 }
 </script>
 
@@ -179,13 +224,18 @@ export default {
                     justify-content: space-between;
 
                     .img-box {
-                        padding-top: 10px;
+                        padding: 10px 0;
                         width: calc(100% / 3 - 5px);
+                        cursor: pointer;
+                        border-bottom: transparent 2px solid;
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                         }
+                    }
+                    .img-box.active {
+                        border-color: $orange;
                     }
                 }
 

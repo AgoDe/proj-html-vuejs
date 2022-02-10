@@ -155,7 +155,6 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/main.scss';
     main {
-        
 
         .jumbotron {         
             background: 
@@ -168,12 +167,8 @@ export default {
                 url('../assets/slider_icon13.png') no-repeat 50% 10%,
                 url('../assets/slider_slide2_background.png') repeat
                 ;
+                 background-size: contain, contain, 4% 16%, 3% 10%, 4% 13%, 5% 15%, 5% 15%, contain;
 
-             
-    
-            background-size: contain, contain, 4% 16%, 3% 10%, 4% 13%, 5% 15%, 5% 15%, contain;
-
-            
             .container {
                 height: 400px; 
                 display: flex;
