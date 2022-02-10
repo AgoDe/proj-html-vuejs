@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container padding-y30">
         
         <h2>Our Classes</h2>
         <div class="subtitle">
@@ -101,7 +101,6 @@ export default {
 @import '@/styles/main.scss';
 
 .container {
-    padding: $container-pad 0;
     .presentation {
         display: flex;
 

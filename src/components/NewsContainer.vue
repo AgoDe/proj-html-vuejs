@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container padding-y30">
 
         <h2>What's New</h2>
         <div class="subtitle">

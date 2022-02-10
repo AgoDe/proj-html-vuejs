@@ -31,7 +31,7 @@
         </div>
 
         <!-- welcome to fable -->
-        <div class="welcome container">
+        <div class="welcome container padding-y30">
 
             <h2>Welcome to Fable</h2>
             <div class="subtitle">
@@ -219,7 +219,6 @@ export default {
             background-size: cover;
         }
         .welcome {
-            padding: $container-pad 0;
             text-align: center;
 
             .services {
