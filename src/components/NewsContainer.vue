@@ -39,6 +39,8 @@
 
         </div>
 
+        <div class="button special orange">go to blog</div>
+
     </div>
 </template>
 

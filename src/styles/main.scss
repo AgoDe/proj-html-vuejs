@@ -19,15 +19,45 @@
 
 .button {
     display: inline-block;
-    line-height: 30px;
-    height: 30px;
+    padding: 10px ;
     font-size: 10px;
     font-weight: 500;
-    padding: 0 10px;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
+}
+.button.special {
+    padding-left: 10px;
+    padding-right: 30px;
 
+    &::after {
+        content: '';
+        background: url(/images/slider_next.png) no-repeat center;
+        position: absolute;
+        right: 9px;
+        top: 11px;
+        z-index:1001;
+        width: 10px;
+        height: 10px;
+    }
+}
+.button.white {
+    border: white 1px solid;
+
+     &:hover {
+        background-color: $sugar;
+        color: $purple;
+    }
+}
+.button.orange {
+    margin-top: 14px;
+    background: $orange;
+    color: $sugar;
+    width: 150px;
+
+    &:hover {
+    background-color: $purple;
+    }
 }
 
 h2 {

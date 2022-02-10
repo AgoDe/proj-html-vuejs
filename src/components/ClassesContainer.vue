@@ -42,7 +42,7 @@
                 </div>
                 <div>
                     <img :src="`/images/${item.path}`" :alt="item.path">
-                    <div class="button">read more</div>
+                    <div class="button special orange">read more</div>
                 </div>
             </div>
 
@@ -179,21 +179,10 @@ export default {
                     height: 100%;
                     object-fit: cover;
                 }
-                .button {
-                    background: $orange;
-                    color: $sugar;
+                .button {      
                     position: absolute;
                     right: 0;
                     bottom: 0;
-                    height: 40px;
-                    line-height: 40px;
-                    width: 130px;
-                    font-size: 14px;
-                    
-
-                    &:hover {
-                        background: $purple;
-                    }
                 }
             }
 

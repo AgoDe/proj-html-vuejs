@@ -12,7 +12,7 @@
                     <h1>Welcoming Place</h1>
                     <p>For Every Child</p>
 
-                    <div class="button">buy this theme now</div>
+                    <div class="button orange">buy this theme now</div>
 
                 </div>
 
@@ -25,7 +25,7 @@
         <div class="banner">
             <div class="container">
                 <p>How to Enroll Your Child to a Class?</p>
-                <div class="button">
+                <div class="button special white">
                     learn more 
                 </div>
             </div>
@@ -113,7 +113,7 @@
         <div class="banner special">
             <div class="container">
                 <p>See Our Kindergarten Photo Gallery!</p>
-                <div class="button">
+                <div class="button special white">
                     view gallery
                 </div>
             </div>
@@ -185,18 +185,6 @@ export default {
                         font-size: 28px;
                         padding: 6px 0 ;
                     }
-                    .button {
-                        margin-top: 14px;
-                        background: $orange;
-                        color: $sugar;
-                        width: 150px;
-                        
-                          
-                        &:hover {
-                        background-color: $purple;
-                        }
-                    }
-
                 }
             }
             
@@ -216,31 +204,7 @@ export default {
                 p {
                     font-size: 20px;
                 }
-                .button {
-                    border: white 1px solid;
-                    width: 150px;
-                    
-
-                    img {
-                        height: 25px;
-                    }
-
-                     &:hover {
-                        background-color: $sugar;
-                        color: $purple;
-                    }
-                     &::after{
-                        content: '';
-                        width: 20px;
-                        height: 20px;
-                        position: absolute;
-                        bottom: 3px;
-                        right: 0px;
-                        transform:translate(-50%, 0);
-                        background: url(../assets/slider_next.png);
-                        background-size: contain;
-                    }
-                }
+                
             }// end of container
         } // end of banner
         .banner.special {
@@ -297,13 +261,11 @@ export default {
             div {
                 width: calc(100% / 4);
                 position: relative;
-
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
                 }
-
                 &:hover::after {
                     content: '';
                     width: 120px;
@@ -316,11 +278,7 @@ export default {
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
-
                 }
-
-
-
             }
         } // end of gallery
     } 
