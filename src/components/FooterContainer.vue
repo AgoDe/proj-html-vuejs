@@ -23,17 +23,17 @@
             </div>
 
             <div class="input-container">
-                <div>
+                <div class="input-box">
                     <input placeholder="Your Name *" type="text">
                     <input placeholder="Your E-mail *" type="text">
                     <input placeholder="Subject *" type="text">
                 </div>
 
-                <div>
-                    <input placeholder="Your Message *" type="textarea">
+                <div class="text-area">
+                    <textarea placeholder="Your Message *" name=message rows="8" cols="80"></textarea>
                 </div>
             </div>
-            <div class="button">send message</div>
+            <submit class="button orange">send message</submit>
 
 
 
@@ -117,26 +117,36 @@ footer {
         } // end of contacts-box
 
         .input-container {
+            margin: 20px 0;
             display: flex;
+            justify-content: space-between;
 
             div {
                 width: 50%;
-                padding: 15px;
+            }
+            input,
+            textarea {
+                width: 98%;
+                padding-left: 10px;
+                border: $light-grey 1px solid;
+            }
+            .input-box {
                 display: flex;
                 flex-direction: column;
-            } 
+                justify-content: space-between;
+
+                input {    
+                    height: calc(100% / 3 - 5px);         
+                }
+            }
+            textarea {
+                padding-top: 10px;
+                height: 100%;
+                margin: 0;
+                
+            }
         } // end of input-container
 
-        .button {
-            margin-top: 14px;
-            background: $orange;
-            color: $sugar;
-            
-                
-            &:hover {
-                background-color: $purple;
-            }
-        }
 
     } // end of contacts
 } // end of footer
