@@ -94,10 +94,18 @@
 
         <!-- media-gallery -->
         <div class="gallery">
-            <img src="../assets/gallery_01.jpg" alt="gallery-1">
-            <img src="../assets/gallery_02.jpg" alt="gallery-2">
-            <img src="../assets/gallery_03.jpg" alt="gallery-3">
-            <img src="../assets/gallery_04.jpg" alt="gallery-4">
+            <div>
+                <img src="../assets/gallery_01.jpg" alt="gallery-1">
+            </div>
+            <div>
+                <img src="../assets/gallery_02.jpg" alt="gallery-2">
+            </div>
+            <div>
+                <img src="../assets/gallery_03.jpg" alt="gallery-3">
+            </div>
+            <div>
+                <img src="../assets/gallery_04.jpg" alt="gallery-4">
+            </div>
         </div>
         <!-- end of media-gallery -->
 
@@ -210,6 +218,8 @@ export default {
                 }
                 .button {
                     border: white 1px solid;
+                    width: 150px;
+                    
 
                     img {
                         height: 25px;
@@ -218,6 +228,17 @@ export default {
                      &:hover {
                         background-color: $sugar;
                         color: $purple;
+                    }
+                     &::after{
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        bottom: 3px;
+                        right: 0px;
+                        transform:translate(-50%, 0);
+                        background: url(../assets/slider_next.png);
+                        background-size: contain;
                     }
                 }
             }// end of container
@@ -272,11 +293,36 @@ export default {
         } // end of welcome
         .gallery {
             display: flex;
-
-            img {
+             
+            div {
                 width: calc(100% / 4);
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover::after {
+                    content: '';
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                    background: $purple url(../assets/image_overlay.png) no-repeat center;
+                    opacity: 0.6;
+                    position: absolute;
+                    z-index: 1001;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+
+                }
+
+
+
             }
-        }
+        } // end of gallery
     } 
        
 
